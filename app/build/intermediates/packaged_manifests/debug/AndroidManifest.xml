@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Prac34" >
         <activity
+            android:name="com.example.prac34.MessageGroup"
+            android:exported="false" />
+        <activity
             android:name="com.example.prac34.ListActivity"
             android:exported="true" >
             <intent-filter>

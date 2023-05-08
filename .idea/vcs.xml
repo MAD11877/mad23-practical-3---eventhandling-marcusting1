@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git repository" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mad23-practical-3---eventhandling-marcusting1" vcs="Git" />
   </component>
 </project>

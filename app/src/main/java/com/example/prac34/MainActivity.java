@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState); //
         setContentView(R.layout.activity_main);
         btn = findViewById(R.id.button);
         btn.setOnClickListener(this);

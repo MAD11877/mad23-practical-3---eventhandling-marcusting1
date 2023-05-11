@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.prac34.app-mergeDebugResources-26:/values-v16/values-v16.xml",
+            "outputFile": "com.example.prac34.app-mergeDebugResources-22:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\wwwma\\.gradle\\caches\\transforms-3\\8c25e88eb4ea76e8f3d0900731d8ae12\\transformed\\core-1.9.0\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\wwwma\\.gradle\\caches\\transforms-3\\7ba610368285ef737a15a687544ee720\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\wwwma\\.gradle\\caches\\transforms-3\\a43e4a433b4f349fca53a26323745a2f\\transformed\\appcompat-1.4.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\wwwma\\.gradle\\caches\\transforms-3\\5e73b955d9a5f63753360b537820c25e\\transformed\\core-1.7.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

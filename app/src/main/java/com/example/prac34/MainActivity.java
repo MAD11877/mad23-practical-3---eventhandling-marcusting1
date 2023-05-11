@@ -7,14 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.example.prac34.R;
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.prac34.R;
-
-import org.w3c.dom.Text;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {

@@ -13,12 +13,15 @@ import android.widget.TextView;
 public class MessageGroup extends AppCompatActivity implements View.OnClickListener {
 
     private Button grp1btn;
+    private Button grp2btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message_group);
         grp1btn = findViewById(R.id.button3);
         grp1btn.setOnClickListener(this);
+        grp2btn = findViewById(R.id.button5);
+        grp2btn.setOnClickListener(this);
 
     }
 

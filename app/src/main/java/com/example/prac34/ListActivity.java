@@ -1,28 +1,30 @@
-package com.example.prac34;
+package com.example.prac34
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.Image;
+
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
 import android.content.DialogInterface;
-import android.os.Bundle;
+
 import android.widget.ImageView;
-import android.widget.TextView;
+
 
 import androidx.appcompat.app.AlertDialog;
-
-import org.w3c.dom.Text;
-
-import java.util.List;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import java.util.Random;
+import java.util.ArrayList;
+
 
 
 public class ListActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView imageView;
+    private RecyclerView recyclerView;
+    private UserAdapter userAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,37 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
         imageView = findViewById(R.id.imageView);
         imageView.setOnClickListener(this);
 
+        recyclerView = findViewById(R.id.userRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        //Creating User Objects
+        ArrayList<User> userList = new ArrayList<>();
+        int count = 0;
+
+
+        while (count < 20){
+
+            Random random1 = new Random();
+            int randomNum1 = random1.nextInt();
+            String Name = "Name" + String.valueOf(randomNum1);
+
+            Random random2 = new Random();
+            int randomNum2 = random2.nextInt();
+            String Desc = String.valueOf(randomNum2);
+
+            Random random3 = new Random();
+            int id = random3.nextInt();
+
+            Random random4 = new Random();
+            boolean boolVal = random4.nextInt(2) == 0;
+
+            User userObj = new User(Name,Desc,id,boolVal);
+            userList.add(userObj);
+            count++;
+        }
+
+        userAdapter = new UserAdapter(userList);
+        recyclerView.setAdapter(userAdapter);
     }
 
     @Override

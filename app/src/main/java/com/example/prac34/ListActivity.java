@@ -10,6 +10,7 @@ import android.view.View;
 import android.content.DialogInterface;
 
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import androidx.appcompat.app.AlertDialog;
@@ -24,6 +25,7 @@ public class ListActivity extends AppCompatActivity implements View.OnClickListe
 
     private ImageView imageView;
     private RecyclerView recyclerView;
+
     private UserAdapter userAdapter;
 
     @Override
